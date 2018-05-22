@@ -70,22 +70,20 @@ starting point of this project.
 - Use GraphQL (GitHub)
 - Add support to all GSOC 2018 organizations that are using GitHub as an issue
   tracker.
-
-##### Phase 2
-- Add GitLab support.
+- Add GitLab.com support.
   - Search by Projects.
   - Search open issues.
   - Search issue by tag.
+
+##### Phase 2
 - Add support to all GSOC 2018 organizations that are using GitLab.com as an issue
   tracker.
+- Add support GitLab CE
 - Add Discourse support.
   - Search for topics with bugs type label.
 - Add support for discourse that opened their api for public use.
 
 ##### Phase 3
-- Add Phabricator support.
-- Add support to all GSOC 2018 organizations that are using Phabricator and opened
-  their api for public use.
 - GitHub
   - Add pull request support.
     - Search unreviewed PR.
@@ -93,3 +91,6 @@ starting point of this project.
 - GitLab
   - Search open merge request.
   - Browse MR by authors.
+- Add Phabricator support.
+- Add support to all GSOC 2018 organizations that are using Phabricator and opened
+  their api for public use.
