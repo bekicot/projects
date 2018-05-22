@@ -64,11 +64,42 @@ Because the concept of this project, is the same as [GSOC prep task](http://summ
 [it](http://github.com/GSOC prep task/gsoc-prep-tasks) can be used as the
 starting point of this project.
 
+#### Known Issue Tracker Usage In GSOC Organization
+
+Issue Tracker | Usage
+--- | ---
+GitHub | 16
+Trac | 7
+Atlassian Jira | 7
+GitLab | 4
+phabricator | 4
+BugZilla | 4
+Usabilla | 2
+Redmine | 2
+
+Because of the difficulty to support all of the known issue tracker in the range
+of GSOC timeline. This project will provide support for GiHub, GitLab, And
+Phabricator.
+
+#### Identifying Task Of A Specific Organization
+
+For a hosted issue tracker (like GitHub.com & GitLab.com) it is already
+documented and we can confidently know what resource are posible and what is not
+. The process of adding support for a new organization is posible using an
+external data source such as [Wikidata](http://wikidata.org). The app can fetch
+for list of organization that use GitHub / GitLab via [Qikidata Query API](https://query.wikidata.org/)
+
+The case is different for a self hosted Organization. The accessibility is
+different. For organization that use Phabricator as issue tracker, the process
+of adding support to it will be manually for each organization to make sure that
+the API is accessible.
+
 #### Milestone
 
 ##### Phase 1
+- Support adding user token
 - Use GraphQL (GitHub)
-- Add support to all GSOC 2018 organizations that are using GitHub as an issue
+- Add support to known GSOC 2018 organizations that are using GitHub as an issue
   tracker.
 - Add GitLab.com support.
   - Search by Projects.
@@ -76,7 +107,7 @@ starting point of this project.
   - Search issue by tag.
 
 ##### Phase 2
-- Add support to all GSOC 2018 organizations that are using GitLab.com as an issue
+- Add support to known GSOC 2018 organizations that are using GitLab.com as an issue
   tracker.
 - Add support GitLab CE
 - Add Discourse support.
@@ -92,5 +123,5 @@ starting point of this project.
   - Search open merge request.
   - Browse MR by authors.
 - Add Phabricator support.
-- Add support to all GSOC 2018 organizations that are using Phabricator and opened
+- Add support to some GSOC 2018 organizations that are using Phabricator and opened
   their api for public use.
